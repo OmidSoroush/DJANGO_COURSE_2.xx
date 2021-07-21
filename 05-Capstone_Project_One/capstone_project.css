@@ -27,10 +27,12 @@ h2{
 }
 
 
-.userinput{
+label{
   font-size: 1.5em;
   margin-bottom: 10px;
 }
+
+
 
 #submit{
   border-radius: 25px;
