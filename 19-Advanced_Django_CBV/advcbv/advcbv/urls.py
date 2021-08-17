@@ -24,3 +24,6 @@ urlpatterns = [
     # path('',views.CBView.as_view()),
     # path('',views.index)
 ]
+
+
+# continue tomorrow 
