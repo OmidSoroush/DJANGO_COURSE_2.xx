@@ -21,10 +21,10 @@ class IndexView(TemplateView):
     # template_name = 'app_name/site.html'
     template_name = 'index.html'
 
-    # def get_context_data(self,**kwargs):
-    #     context  = super().get_context_data(**kwargs)
-    #     context['injectme'] = "Basic Injection!"
-    #     return context
+    def get_context_data(self,**kwargs):
+        context  = super().get_context_data(**kwargs)
+        context['injectme'] = "Basic Injection!"
+        return context
 
 class SchoolListView(ListView):
     # If you don't pass in this attribute,
@@ -38,6 +38,6 @@ class SchoolListView(ListView):
 
 
 class SchoolDetailView(DetailView):
-    #context_object_name = 'school_detail'
+    context_object_name = 'school_details'
     model = models.School
     template_name = 'basic_app/school_detail.html'
