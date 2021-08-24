@@ -3,9 +3,9 @@
   <div class="jumbotron">
     <h1>Welcome to the School Detail Page</h1>
     <h2>School Details:</h2>
-    <p>Name: {{school.name}}</p>
-    <p>Principal: {{school.principal}}</p>
-    <p>Location: {{school.location}}</p>
+    <p>Name: {{school_details.name}}</p>
+    <p>Principal: {{school_details.principal}}</p>
+    <p>Location: {{school_details.location}}</p>
 
 
 
@@ -14,6 +14,11 @@
       {% for student in school_details.students.all %}
         <p>{{student.name}} who is {{student.age}} years old.</p>
       {% endfor %}
+
+  </div>
+
+  <div class="container">
+    <p><a class="btn btn-warning" href="{% url 'basic_app:update' pk=school_details.pk %}">Update</a></p>
 
   </div>
 
