@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'bootstrap3',
+    "bootstrap4",
     'accounts',
+    'groups',
+    'posts',
 ]
 
 MIDDLEWARE = [
@@ -121,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES = Path(BASE_DIR) / 'static'
+STATICFILES_DIRS = [BASE_DIR / 'static',]
 
 LOGIN_REDIRECT_URL = 'test'
 LOGOUT_REDIRECT_URL = 'thanks'
