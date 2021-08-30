@@ -30,7 +30,7 @@ class Post(models.Model):
             "posts:single",
             kwargs={
                 "username": self.user.username,
-                "pk": self.pk
+                "pk":I  self.pk
             }
         )
 
